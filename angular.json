@@ -30,7 +30,9 @@
               "node_modules/bulma/css/bulma.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/scripts/main.js",
+            ]
           },
           "configurations": {
             "production": {

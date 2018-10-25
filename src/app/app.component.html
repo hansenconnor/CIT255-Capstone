@@ -1,7 +1,11 @@
 <!-- header -->
 <app-header></app-header>
-<!-- <app-home></app-home> -->
-<app-contact></app-contact>
+<ul>
+  <li>Hi!</li>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.name}}
+  </li>
+</ul>
 <!-- routes will be rendered here -->
 <router-outlet></router-outlet>
 
