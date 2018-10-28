@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CoreModule } from './core/core.module';
+import { HttpClientModule } from  '@angular/common/http';
   // Firebase
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -29,6 +30,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 // import {HeaderModule} from './shared/layout/header/header.module';
 // import {HeaderComponent} from './shared/layout/header/header.component';
@@ -42,12 +44,14 @@ const appRoutes: Routes = [];
     FooterComponent,
     HomeComponent,
     ContactComponent,
+    ProfileComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     FormsModule,
     routes,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
     AngularFirestoreModule,
@@ -58,7 +62,7 @@ const appRoutes: Routes = [];
     )
     // Other imports here
   ],
-  providers: [],
+  providers: [AppComponent],
   bootstrap: [AppComponent]
 })
 

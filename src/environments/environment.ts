@@ -12,7 +12,8 @@ export const environment = {
     projectId: "fir-project-405de",
     storageBucket: "fir-project-405de.appspot.com",
     messagingSenderId: "786708175676"
-  }
+  },
+  API_URL: 'localhost:3000/api/',
 };
 
 /*
