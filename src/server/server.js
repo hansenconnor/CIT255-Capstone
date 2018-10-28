@@ -44,6 +44,8 @@ app.get('/api/food',bodyParser.json(), function (req, res) => (){
     res.send(foods);
 });
 
+
+
 app.get('/api', (req, res) => {
   // res.send('Hello World');
   console.log('Hello from server.js!');
